@@ -14,7 +14,7 @@ jobs:
     #name: Testing with ${{ env.nameVar }} this one will not start
     environment: Production
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - run: echo "GITHUB_WORKFLOW=Workflow name from step" >> $GITHUB_ENV
